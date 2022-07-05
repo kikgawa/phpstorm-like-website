@@ -25,16 +25,10 @@
 }
 #about {
   background: #f4f4f4;
-  &.fixed {
-    .fixed-screen {
-      position: fixed;
-      top: 100px;
-    }
-  }
 }
 #footer {
   width: 100%;
-  height: 400px;
+  height: 1600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,6 +38,9 @@
   display: grid;
   grid-template-columns: 33.3% 1fr;
   gap: 20px;
+  @media (max-width: 680px) {
+    display: block;
+  }
 }
 .scroll-wrapper-left {
   margin-top: 100px;
@@ -72,4 +69,17 @@ img {
 
 .overview-info-item:not(last-child) {
   padding-bottom: 600px;
+}
+
+.d-md-none {
+  display: block;
+  @media (min-width: 680px) {
+    display: none;
+  }
+}
+.d-sm-none {
+  display: block;
+  @media (max-width: 680px) {
+    display: none;
+  }
 }
