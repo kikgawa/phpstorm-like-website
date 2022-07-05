@@ -27,7 +27,7 @@ const stArray = [
 // console.log(stArray)
 stArray.forEach((obj) =>
   ScrollTrigger.matchMedia({
-    "(min-width:641px)": function () {
+    "(min-width:641px)": () => {
       gsap.to(obj.name, {
         autoAlpha: obj.params.autoAlpha,
         scrollTrigger: {
@@ -49,7 +49,7 @@ const spImg = document.querySelectorAll('.overview-info-item-sp')
 console.log(spImg)
 spImg.forEach((obj) =>
   ScrollTrigger.matchMedia({
-    "(max-width:640px)": function () {
+    "(max-width:640px)": () => {
       gsap.set(obj, {
         opacity: 0
       })
