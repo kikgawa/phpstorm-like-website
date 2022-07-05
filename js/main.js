@@ -44,3 +44,23 @@ stArray.forEach((obj) =>
     }
   })
 )
+
+const spImg = document.querySelectorAll('.overview-info-item-sp')
+console.log(spImg)
+spImg.forEach((obj) =>
+  ScrollTrigger.matchMedia({
+    "(max-width:640px)": function () {
+      gsap.set(obj, {
+        opacity: 0
+      })
+      gsap.to(obj, {
+        opacity: 1,
+        duration: 0.6,
+        scrollTrigger: {
+          trigger: obj,
+          start: 'top 50%',
+        }
+      })
+    }
+  })
+)
