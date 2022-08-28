@@ -1,7 +1,9 @@
+
+const t = document.querySelector('#fixed').offsetHeight
 const stArray = [
   {
     name: '.fixed-screen',
-    params: { trigger: '.fixed-screen', start: 'top 100px', end: 'bottom 50%', markers: false, endTrigger: '#about', pin: true, pinSpacing: true, toggleActions: 'play none none reverse' }
+    params: { trigger: '.fixed-screen', start: 'center center', end: 'bottom top+=100px', markers: true, endTrigger: '#about', pin: true, pinSpacing: true, toggleActions: 'play none none reverse' }
   },
   {
     name: '.screen-item-1',

@@ -82,6 +82,7 @@ img {
 
 .fixed-screen {
   position: relative;
+  height: 463px;
 }
 .fixed-screen .fixed-screen-item {
   position: absolute;
